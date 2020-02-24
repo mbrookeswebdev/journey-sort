@@ -87,8 +87,7 @@ class Sorter
     {
         $result = array();
         foreach ($this->sortedDestinations as $destination) {
-            array_push($result,
-                $destination["from"]);
+            array_push($result, $destination["from"]);
         }
         if (count($this->sortedDestinations) > 0) {
             $lastJourney = $this->sortedDestinations[count($this->sortedDestinations) - 1];
